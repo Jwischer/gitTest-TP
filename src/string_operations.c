@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* wide character strlen fucntion */
-size_t my_wc_strlen(const wchar_t *s)
+wchar_t *my_wstrchr(wchar_t *ws, wchar_t wc)
 {   
    char *p = s;
 
