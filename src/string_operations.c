@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-+size_t my_wstrlen(const wchar_t *s)
-{
-   const wchar_t *p = s;
+/* wide character strlen fucntion */
+wchar_t *my_wstrchr(wchar_t *ws, wchar_t wc)
+{   
+   char *p = s;
+
    while (*p)
       ++p;
 
