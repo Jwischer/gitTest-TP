@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-size_t my_strlen(char *s)
++size_t my_wstrlen(const wchar_t *s)
 {
-   char *p = s;
-
+   const wchar_t *p = s;
    while (*p)
       ++p;
 
