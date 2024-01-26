@@ -1,0 +1,47 @@
+From 026127b283bea5dc0a8673f484a5c713cbe740ab Mon Sep 17 00:00:00 2001
+From: Jwischer <jakewischer@gmail.com>
+Date: Thu, 25 Jan 2024 19:38:52 -0600
+Subject: [PATCH] s
+
+---
+ src/string_operations | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+ create mode 100644 src/string_operations
+
+diff --git a/src/string_operations b/src/string_operations
+new file mode 100644
+index 0000000..e82ebcd
+--- /dev/null
++++ b/src/string_operations
+@@ -0,0 +1,27 @@
++#include <stdio.h>
++
++size_t my_strlen(char *s)
++{
++   char *p = s;
++
++   while (*p)
++      ++p;
++
++   return (p - s);
++}
++
++int main(void)
++{
++   int i;
++   char *s[] = 
++   {
++      "Git tutorials",
++      "Tutorials Point"
++   };
++
++   for (i = 0; i < 2; ++i)
++      
++   printf("string lenght of %s = %d\n", s[i], my_strlen(s[i]));
++
++   return 0;
++}
+\ No newline at end of file
+-- 
+2.43.0.windows.1
+
